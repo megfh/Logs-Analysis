@@ -44,4 +44,4 @@ Several views were added to the database in building this tool. The commands to 
 
  - 'create view daily_requests as select numRequests.date_trunc, numRequests.count as total_requests, numErrors.count as total_errors from numErrors inner join numRequests on numRequests.date_trunc=numErrors.date_trunc;'
 
- - create view percentError as select date_part('month', date_trunc) as "month", date_part('day', date_trunc) as "day", date_part('year', date_trunc) as "year", cast(total_errors as float)/cast(total_requests as float)*100 as "percent_error" from daily_requests;
+ - 'create view percentError as select date_part('month', date_trunc) as "month", date_part('day', date_trunc) as "day", date_part('year', date_trunc) as "year", cast(total_errors as float)/cast(total_requests as float)*100 as "percent_error" from daily_requests;'
