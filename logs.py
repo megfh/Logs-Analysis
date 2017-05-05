@@ -1,3 +1,4 @@
+#! /usr/bin/env
 # Udacity Full Stack Nanodegree Project: Logs Analysis
 
 import psycopg2
